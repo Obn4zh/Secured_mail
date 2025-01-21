@@ -1,0 +1,875 @@
+2025-01-12 13:59:27,796 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 13:59:27,800 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=4893003fc217de67403452d2722af81955813ca180543b26f432722ebbcb7376 HTTP/1.1" 200 1274
+2025-01-12 13:59:27,802 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICUzCCAf6gAwIBAgIUMxgwFdHBZBr3zQfKBHitjn4/GlUwDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM4MTdaFw0yNjAxMDgwODM4MTdaMIGmMScwJQYJKoZIhvcN\r\nAQkBFhh0ZXN0LmxvZ2luLnZrYkB5YW5kZXgucnUxIDAeBgNVBAMMF0d1bHkgQW50\r\nb24gTWlraGFpbG92aWNoMQ0wCwYDVQQLDARJaVZUMQ0wCwYDVQQKDAREU1RVMRYw\r\nFAYDVQQHDA1Sb3N0b3Ytb24tRG9uMRYwFAYDVQQIDA1Sb3N0b3Ygb2JsYXN0MQsw\r\nCQYDVQQGEwJSVTBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcBAQICA0MA\r\nBECLG+8VAuQYAIlI3tu3rZ7tzAYGO7M2huugfrBd4Dr1jGAWCK+FjpI0HBCRgTxD\r\nn/45q3Lyac4HSlM5Xo7eyC9jo0IwQDAdBgNVHQ4EFgQUjanQph/EX5KE4NPmd6Mz\r\nNJEmJPAwHwYDVR0jBBgwFoAUJ7zcBGUhDwMJNI77VHZI4smuOuwwDAYIKoUDBwEB\r\nAwIFAANBAHoEZgE4NR/VKEO0lFAShGpcJMGqB7ZnLnPPVzdbN993E6jaHZkI44tu\r\nrFgz0UOjTZVsyLfxPfaC6JsMRaViiiQ=\r\n-----END CERTIFICATE-----\r\n'
+2025-01-12 13:59:27,812 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpuzsrdsyc.crt
+2025-01-12 13:59:27,880 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpuzsrdsyc.crt: OK
+2025-01-12 13:59:27,881 - INFO - Email найден в сертификате.
+2025-01-12 13:59:27,909 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-12 13:59:27,938 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpuzsrdsyc.crt
+2025-01-12 13:59:30,611 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-12 13:59:30,640 - DEBUG - Сгенерированный симметричный ключ: b0a8789d9bbdc9527ecd491609caaf15263921da41d864071c89f77c19a53af2
+2025-01-12 13:59:30,641 - INFO - Запись для test.login.vkb@yandex.ru уже существует. Обновление не требуется.
+2025-01-12 13:59:30,644 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-12 13:59:30,644 - INFO - Отправка письма начата...
+2025-01-12 13:59:30,644 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-12 13:59:30,644 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-12 13:59:30,645 - DEBUG - Subject: enc/log test (type: <class 'str'>)
+2025-01-12 13:59:30,646 - DEBUG - Body: aWJyQpn0YYZnO+w= (type: <class 'str'>)
+2025-01-12 13:59:30,646 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-12 13:59:32,263 - INFO - Письмо успешно отправлено!
+2025-01-12 13:59:32,778 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-12 13:59:32,780 - DEBUG - Raw folder data: b'(\\HasChildren \\Unmarked \\Drafts) "|" Drafts'
+2025-01-12 13:59:32,780 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Templates) "|" "Drafts|template"'
+2025-01-12 13:59:32,781 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\NoInferiors) "|" INBOX'
+2025-01-12 13:59:32,781 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked) "|" Outbox'
+2025-01-12 13:59:32,782 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Sent) "|" Sent'
+2025-01-12 13:59:32,782 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Junk) "|" Spam'
+2025-01-12 13:59:32,782 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Trash) "|" Trash'
+2025-01-12 13:59:32,782 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-12 13:59:34,004 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-12 13:59:34,047 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-12 14:04:33,822 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:04:33,822 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:04:44,254 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:04:44,263 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:04:54,732 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:04:54,748 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:05:28,091 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-12 14:05:28,572 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1115
+2025-01-12 14:05:28,633 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:05:28,653 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-12 14:06:42,575 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:06:42,575 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:07:05,382 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:07:05,382 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:07:35,859 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-12 14:07:36,339 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1207
+2025-01-12 14:07:36,401 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:07:36,415 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-12 14:11:53,958 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:11:53,958 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:13:46,819 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:13:46,819 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:14:15,376 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:14:15,380 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:14:49,154 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-12 14:14:49,158 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-12 14:24:43,312 - INFO - Отправка письма начата...
+2025-01-12 14:24:43,312 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-12 14:24:43,312 - DEBUG - To: ['adsfadfsadfs@example.com'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-12 14:24:43,313 - DEBUG - Subject: 123 (type: <class 'str'>)
+2025-01-12 14:24:43,313 - DEBUG - Body: 123 (type: <class 'str'>)
+2025-01-12 14:24:43,313 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-12 14:24:45,050 - INFO - Письмо успешно отправлено!
+2025-01-12 14:24:45,563 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-12 14:24:45,564 - DEBUG - Raw folder data: b'(\\HasChildren \\Unmarked \\Drafts) "|" Drafts'
+2025-01-12 14:24:45,564 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Templates) "|" "Drafts|template"'
+2025-01-12 14:24:45,564 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\NoInferiors) "|" INBOX'
+2025-01-12 14:24:45,564 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked) "|" Outbox'
+2025-01-12 14:24:45,564 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Sent) "|" Sent'
+2025-01-12 14:24:45,566 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Junk) "|" Spam'
+2025-01-12 14:24:45,566 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Trash) "|" Trash'
+2025-01-12 14:24:45,566 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-12 14:24:46,536 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-12 14:24:46,572 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-12 16:07:12,541 - INFO - Отправка письма начата...
+2025-01-12 16:07:12,542 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-12 16:07:12,542 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-12 16:07:12,542 - DEBUG - Subject: тест даты (type: <class 'str'>)
+2025-01-12 16:07:12,542 - DEBUG - Body: дата (type: <class 'str'>)
+2025-01-12 16:07:12,542 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-12 16:07:14,402 - INFO - Письмо успешно отправлено!
+2025-01-12 16:07:15,049 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-12 16:07:15,049 - DEBUG - Raw folder data: b'(\\HasChildren \\Unmarked \\Drafts) "|" Drafts'
+2025-01-12 16:07:15,050 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Templates) "|" "Drafts|template"'
+2025-01-12 16:07:15,050 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\NoInferiors) "|" INBOX'
+2025-01-12 16:07:15,051 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked) "|" Outbox'
+2025-01-12 16:07:15,051 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Sent) "|" Sent'
+2025-01-12 16:07:15,051 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Junk) "|" Spam'
+2025-01-12 16:07:15,051 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Trash) "|" Trash'
+2025-01-12 16:07:15,052 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-12 16:07:16,070 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-12 16:07:16,104 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 10:45:04,974 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 10:45:04,977 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-13 11:04:03,456 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5001
+2025-01-13 11:04:14,329 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5001
+2025-01-13 11:04:47,810 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 11:04:47,831 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-13 12:43:50,743 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 12:43:50,759 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=4893003fc217de67403452d2722af81955813ca180543b26f432722ebbcb7376 HTTP/1.1" 200 16
+2025-01-13 12:44:57,614 - INFO - Отправка письма начата...
+2025-01-13 12:44:57,615 - DEBUG - From: "test.login.vkb@yandex.ru" <test.login.vkb@yandex.ru> (type: <class 'str'>)
+2025-01-13 12:44:57,615 - DEBUG - To: ['Obn4zh@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 12:44:57,616 - DEBUG - Subject: 12 (type: <class 'str'>)
+2025-01-13 12:44:57,616 - DEBUG - Body: 12 (type: <class 'str'>)
+2025-01-13 12:44:57,617 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 12:44:58,728 - INFO - Письмо успешно отправлено!
+2025-01-13 12:44:59,249 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-13 12:44:59,249 - DEBUG - Raw folder data: b'(\\HasChildren \\Unmarked \\Drafts) "|" Drafts'
+2025-01-13 12:44:59,250 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Templates) "|" "Drafts|template"'
+2025-01-13 12:44:59,251 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\NoInferiors) "|" INBOX'
+2025-01-13 12:44:59,251 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked) "|" Outbox'
+2025-01-13 12:44:59,251 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Sent) "|" Sent'
+2025-01-13 12:44:59,252 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Junk) "|" Spam'
+2025-01-13 12:44:59,252 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Trash) "|" Trash'
+2025-01-13 12:44:59,253 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-13 12:45:00,371 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 12:45:00,408 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 12:46:03,977 - ERROR - Произошла ошибка при отправке письма: 'pwd'
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 728, in send_email
+    smtp_password = self.config["pwd"]
+                    ~~~~~~~~~~~^^^^^^^
+  File "c:\D\Диплом\MailClient-master\loadsettings.py", line 13, in __getitem__
+    return self.settings[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'pwd'
+2025-01-13 12:48:22,285 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 12:48:22,302 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=4893003fc217de67403452d2722af81955813ca180543b26f432722ebbcb7376 HTTP/1.1" 200 16
+2025-01-13 12:48:39,499 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 12:48:39,508 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=4893003fc217de67403452d2722af81955813ca180543b26f432722ebbcb7376 HTTP/1.1" 200 16
+2025-01-13 15:26:45,612 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 15:26:46,522 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:26:46,557 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 1286
+2025-01-13 15:26:46,558 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICWTCCAgSgAwIBAgIUA4AxdffJh28KZ/mFnF4nRrMB3m0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMTIxMTA3MzVaFw0yNjAxMTIxMTA3MzVaMIGsMR8wHQYJKoZIhvcN\r\nAQkBFhBPYm40emhAeWFuZGV4LnJ1MREwDwYDVQQDDAjDksOlw7HDsjERMA8GA1UE\r\nCwwIw4jDqMOCw5IxETAPBgNVBAoMCMOEw4PDksOTMRUwEwYDVQQHDAzDkMOuw7HD\r\nssOuw6IxLDAqBgNVBAgMI8OQw67DscOyw67DosOxw6rDoMO/IMOuw6HDq8Ogw7HD\r\nssO8MQswCQYDVQQGEwJSVTBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcB\r\nAQICA0MABEBWSOyP/K4mxUK/U/mUBfN4QyUJ/c0q8i4n8sSNodyAUeUtWCOrYS4k\r\nQS53h6xKqbaLThdYH0+Eve3oBhMAXvyxo0IwQDAdBgNVHQ4EFgQULVZTdvZtVIaX\r\nXHtN/WzBMlYZOHAwHwYDVR0jBBgwFoAUJ7zcBGUhDwMJNI77VHZI4smuOuwwDAYI\r\nKoUDBwEBAwIFAANBAHhJYgw6VUNOhNigDEhUfSm2WXa3JD/sj1PoHlXQeUh1k+Eo\r\nFqZYmacrku8rwG3mNlWf5/EDTSBfEbeWynDZKLk=\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 15:26:46,564 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp9ydhwai7.crt
+2025-01-13 15:26:46,883 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp9ydhwai7.crt: OK
+2025-01-13 15:26:46,884 - INFO - Email найден в сертификате.
+2025-01-13 15:26:46,916 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 15:26:46,952 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp9ydhwai7.crt
+2025-01-13 15:26:53,818 - ERROR - Приватный ключ не найден или выбор устройства отменён пользователем.
+2025-01-13 15:27:22,572 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:27:22,583 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 1286
+2025-01-13 15:27:22,584 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICWTCCAgSgAwIBAgIUA4AxdffJh28KZ/mFnF4nRrMB3m0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMTIxMTA3MzVaFw0yNjAxMTIxMTA3MzVaMIGsMR8wHQYJKoZIhvcN\r\nAQkBFhBPYm40emhAeWFuZGV4LnJ1MREwDwYDVQQDDAjDksOlw7HDsjERMA8GA1UE\r\nCwwIw4jDqMOCw5IxETAPBgNVBAoMCMOEw4PDksOTMRUwEwYDVQQHDAzDkMOuw7HD\r\nssOuw6IxLDAqBgNVBAgMI8OQw67DscOyw67DosOxw6rDoMO/IMOuw6HDq8Ogw7HD\r\nssO8MQswCQYDVQQGEwJSVTBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcB\r\nAQICA0MABEBWSOyP/K4mxUK/U/mUBfN4QyUJ/c0q8i4n8sSNodyAUeUtWCOrYS4k\r\nQS53h6xKqbaLThdYH0+Eve3oBhMAXvyxo0IwQDAdBgNVHQ4EFgQULVZTdvZtVIaX\r\nXHtN/WzBMlYZOHAwHwYDVR0jBBgwFoAUJ7zcBGUhDwMJNI77VHZI4smuOuwwDAYI\r\nKoUDBwEBAwIFAANBAHhJYgw6VUNOhNigDEhUfSm2WXa3JD/sj1PoHlXQeUh1k+Eo\r\nFqZYmacrku8rwG3mNlWf5/EDTSBfEbeWynDZKLk=\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 15:27:22,587 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpqtqd28y0.crt
+2025-01-13 15:27:22,656 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpqtqd28y0.crt: OK
+2025-01-13 15:27:22,657 - INFO - Email найден в сертификате.
+2025-01-13 15:27:22,685 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 15:27:22,713 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpqtqd28y0.crt
+2025-01-13 15:27:25,955 - DEBUG - Приватный ключ успешно извлечён из E:\\test.login.vkb@mail.ru\\private_key.key
+2025-01-13 15:27:25,983 - DEBUG - Сгенерированный симметричный ключ: 6472e1bd6d6be4d5a59148dd5a5e9d19f44a968c476e37ae568c17308049a35c
+2025-01-13 15:27:25,985 - DEBUG - Создан новый JSON-файл: .\MailClient-master\local_secret\contacts.json
+2025-01-13 15:27:29,830 - INFO - Запись для Obn4zh@yandex.ru добавлена в .\MailClient-master\local_secret\contacts.json.
+2025-01-13 15:27:29,831 - INFO - Добавлена новая запись для Obn4zh@yandex.ru.
+2025-01-13 15:27:29,834 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 15:27:30,109 - DEBUG - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png зашифрован и сохранён как C:\D\Диплом\temp\app.png.enc
+2025-01-13 15:30:55,161 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:30:55,165 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 16
+2025-01-13 15:34:47,019 - INFO - Отправка письма начата...
+2025-01-13 15:34:47,020 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 15:34:47,021 - DEBUG - To: ['Obn4zh@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 15:34:47,021 - DEBUG - Subject: 12 (type: <class 'str'>)
+2025-01-13 15:34:47,021 - DEBUG - Body: 12 (type: <class 'str'>)
+2025-01-13 15:34:47,022 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 15:34:48,399 - INFO - Письмо успешно отправлено!
+2025-01-13 15:34:48,720 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'invalid command']
+2025-01-13 15:34:49,093 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'invalid command']
+2025-01-13 15:34:49,094 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 15:35:06,109 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 15:35:07,058 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:35:07,068 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 1286
+2025-01-13 15:35:07,069 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICWTCCAgSgAwIBAgIUA4AxdffJh28KZ/mFnF4nRrMB3m0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMTIxMTA3MzVaFw0yNjAxMTIxMTA3MzVaMIGsMR8wHQYJKoZIhvcN\r\nAQkBFhBPYm40emhAeWFuZGV4LnJ1MREwDwYDVQQDDAjDksOlw7HDsjERMA8GA1UE\r\nCwwIw4jDqMOCw5IxETAPBgNVBAoMCMOEw4PDksOTMRUwEwYDVQQHDAzDkMOuw7HD\r\nssOuw6IxLDAqBgNVBAgMI8OQw67DscOyw67DosOxw6rDoMO/IMOuw6HDq8Ogw7HD\r\nssO8MQswCQYDVQQGEwJSVTBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcB\r\nAQICA0MABEBWSOyP/K4mxUK/U/mUBfN4QyUJ/c0q8i4n8sSNodyAUeUtWCOrYS4k\r\nQS53h6xKqbaLThdYH0+Eve3oBhMAXvyxo0IwQDAdBgNVHQ4EFgQULVZTdvZtVIaX\r\nXHtN/WzBMlYZOHAwHwYDVR0jBBgwFoAUJ7zcBGUhDwMJNI77VHZI4smuOuwwDAYI\r\nKoUDBwEBAwIFAANBAHhJYgw6VUNOhNigDEhUfSm2WXa3JD/sj1PoHlXQeUh1k+Eo\r\nFqZYmacrku8rwG3mNlWf5/EDTSBfEbeWynDZKLk=\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 15:35:07,078 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpj9a1hhhs.crt
+2025-01-13 15:35:07,166 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpj9a1hhhs.crt: OK
+2025-01-13 15:35:07,167 - INFO - Email найден в сертификате.
+2025-01-13 15:35:07,195 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 15:35:07,224 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpj9a1hhhs.crt
+2025-01-13 15:35:10,359 - DEBUG - Приватный ключ успешно извлечён из E:\\test.login.vkb@mail.ru\\private_key.key
+2025-01-13 15:35:10,390 - DEBUG - Сгенерированный симметричный ключ: 6472e1bd6d6be4d5a59148dd5a5e9d19f44a968c476e37ae568c17308049a35c
+2025-01-13 15:35:10,391 - INFO - Запись для Obn4zh@yandex.ru уже существует. Обновление не требуется.
+2025-01-13 15:35:10,394 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 15:35:10,672 - DEBUG - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png зашифрован и сохранён как C:\D\Диплом\temp\app.png.enc
+2025-01-13 15:35:10,673 - INFO - Отправка письма начата...
+2025-01-13 15:35:10,673 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 15:35:10,674 - DEBUG - To: ['Obn4zh@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 15:35:10,674 - DEBUG - Subject: enc/13 (type: <class 'str'>)
+2025-01-13 15:35:10,674 - DEBUG - Body: 1fqD/OZH/HKRKg== (type: <class 'str'>)
+2025-01-13 15:35:10,680 - DEBUG - Attached Files: ['C:\\D\\Диплом\\temp\\app.png.enc'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 15:35:10,697 - DEBUG - Вложение app.png.enc добавлено к EmailMessage.
+2025-01-13 15:35:12,007 - INFO - Письмо успешно отправлено!
+2025-01-13 15:35:12,339 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'invalid command']
+2025-01-13 15:35:12,706 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'invalid command']
+2025-01-13 15:35:12,707 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 15:35:12,708 - DEBUG - Удалён временный файл: C:\D\Диплом\temp\app.png.enc
+2025-01-13 15:35:12,711 - WARNING - Папка C:\D\Диплом\temp не пуста и не может быть удалена.
+2025-01-13 15:35:38,863 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:35:38,867 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 16
+2025-01-13 15:35:47,091 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:35:47,095 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 16
+2025-01-13 15:55:39,581 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:55:39,585 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 17
+2025-01-13 15:55:58,847 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-13 15:55:59,393 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1131
+2025-01-13 15:55:59,437 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:55:59,449 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-13 15:56:16,488 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:56:16,492 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-13 15:56:35,224 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 15:56:35,228 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=4893003fc217de67403452d2722af81955813ca180543b26f432722ebbcb7376 HTTP/1.1" 200 1274
+2025-01-13 15:56:35,228 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICUzCCAf6gAwIBAgIUMxgwFdHBZBr3zQfKBHitjn4/GlUwDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM4MTdaFw0yNjAxMDgwODM4MTdaMIGmMScwJQYJKoZIhvcN\r\nAQkBFhh0ZXN0LmxvZ2luLnZrYkB5YW5kZXgucnUxIDAeBgNVBAMMF0d1bHkgQW50\r\nb24gTWlraGFpbG92aWNoMQ0wCwYDVQQLDARJaVZUMQ0wCwYDVQQKDAREU1RVMRYw\r\nFAYDVQQHDA1Sb3N0b3Ytb24tRG9uMRYwFAYDVQQIDA1Sb3N0b3Ygb2JsYXN0MQsw\r\nCQYDVQQGEwJSVTBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcBAQICA0MA\r\nBECLG+8VAuQYAIlI3tu3rZ7tzAYGO7M2huugfrBd4Dr1jGAWCK+FjpI0HBCRgTxD\r\nn/45q3Lyac4HSlM5Xo7eyC9jo0IwQDAdBgNVHQ4EFgQUjanQph/EX5KE4NPmd6Mz\r\nNJEmJPAwHwYDVR0jBBgwFoAUJ7zcBGUhDwMJNI77VHZI4smuOuwwDAYIKoUDBwEB\r\nAwIFAANBAHoEZgE4NR/VKEO0lFAShGpcJMGqB7ZnLnPPVzdbN993E6jaHZkI44tu\r\nrFgz0UOjTZVsyLfxPfaC6JsMRaViiiQ=\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 15:56:35,231 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpegi3aan4.crt
+2025-01-13 15:56:35,293 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpegi3aan4.crt: OK
+2025-01-13 15:56:35,293 - INFO - Email найден в сертификате.
+2025-01-13 15:56:35,320 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 15:56:35,347 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpegi3aan4.crt
+2025-01-13 15:56:38,336 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 15:56:38,361 - DEBUG - Сгенерированный симметричный ключ: 5f34b4bc812ef5eec20aef18c1ee89a3fed8e7ba4e5c9ee6d3a7bdcc2bbbb739
+2025-01-13 15:56:41,181 - INFO - Запись для test.login.vkb@yandex.ru добавлена в .\MailClient-master\local_secret\contacts.json.
+2025-01-13 15:56:41,183 - INFO - Добавлена новая запись для test.login.vkb@yandex.ru.
+2025-01-13 15:56:41,186 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 15:56:41,187 - INFO - Отправка письма начата...
+2025-01-13 15:56:41,187 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 15:56:41,188 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 15:56:41,188 - DEBUG - Subject: enc/12 (type: <class 'str'>)
+2025-01-13 15:56:41,188 - DEBUG - Body: s70SvE3gWCH5+g== (type: <class 'str'>)
+2025-01-13 15:56:41,189 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 15:56:42,400 - INFO - Письмо успешно отправлено!
+2025-01-13 15:56:42,899 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'Command syntax error. sc=fuNsmv47VqM0_2025-01-13-12-56_imap-production-main-50']
+2025-01-13 15:56:43,302 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'Command syntax error. sc=fuNK7pDDZeA0_2025-01-13-12-56_imap-production-main-98']
+2025-01-13 15:56:43,303 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 16:50:32,659 - INFO - Отправка письма начата...
+2025-01-13 16:50:32,659 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 16:50:32,660 - DEBUG - To: ['Tr1xt3rTrade@gmail.com'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 16:50:32,660 - DEBUG - Subject: Тест диплома антохи (type: <class 'str'>)
+2025-01-13 16:50:32,660 - DEBUG - Body: фыворфыолврлфоыврлофырвлофырвло (type: <class 'str'>)
+2025-01-13 16:50:32,660 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 16:50:35,122 - INFO - Письмо успешно отправлено!
+2025-01-13 16:50:36,040 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'Command syntax error. sc=XoO2vW09VCg0_2025-01-13-13-50_imap-production-main-95']
+2025-01-13 16:50:36,861 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'Command syntax error. sc=YoOP8e0IgOs0_2025-01-13-13-50_imap-production-main-65']
+2025-01-13 16:50:36,863 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 16:51:55,844 - INFO - Отправка письма начата...
+2025-01-13 16:51:55,845 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 16:51:55,845 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 16:51:55,846 - DEBUG - Subject: 12 (type: <class 'str'>)
+2025-01-13 16:51:55,846 - DEBUG - Body: 12 (type: <class 'str'>)
+2025-01-13 16:51:55,846 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 16:51:58,167 - INFO - Письмо успешно отправлено!
+2025-01-13 16:51:58,987 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'Command syntax error. sc=upO0nk65TGk0_2025-01-13-13-51_imap-production-main-377']
+2025-01-13 16:51:59,908 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'Command syntax error. sc=vpOfHJ0qDSw0_2025-01-13-13-51_imap-production-main-98']
+2025-01-13 16:51:59,909 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 16:53:57,325 - INFO - Отправка письма начата...
+2025-01-13 16:53:57,326 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 16:53:57,327 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 16:53:57,328 - DEBUG - Subject: 12 (type: <class 'str'>)
+2025-01-13 16:53:57,328 - DEBUG - Body: 12 (type: <class 'str'>)
+2025-01-13 16:53:57,328 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 16:53:59,823 - INFO - Письмо успешно отправлено!
+2025-01-13 16:54:00,744 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'Command syntax error. sc=wrOMcq0b0Cg0_2025-01-13-13-53_imap-production-main-767']
+2025-01-13 16:54:01,564 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'Command syntax error. sc=xrOTcf3h58c0_2025-01-13-13-53_imap-production-main-87']
+2025-01-13 16:54:01,565 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 16:55:24,791 - INFO - Отправка письма начата...
+2025-01-13 16:55:24,792 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 16:55:24,792 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 16:55:24,794 - DEBUG - Subject: 15 (type: <class 'str'>)
+2025-01-13 16:55:24,794 - DEBUG - Body: 15 (type: <class 'str'>)
+2025-01-13 16:55:24,795 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 16:55:27,788 - INFO - Письмо успешно отправлено!
+2025-01-13 16:55:28,607 - ERROR - Ошибка при подключении к IMAP для поиска папки 'Отправленные': LOGIN command error: BAD [b'invalid command']
+2025-01-13 16:55:29,426 - ERROR - IMAP ошибка: LOGIN command error: BAD [b'invalid command']
+2025-01-13 16:55:29,427 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 17:02:41,740 - INFO - Отправка письма начата...
+2025-01-13 17:02:41,741 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:02:41,741 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:02:41,742 - DEBUG - Subject: tg (type: <class 'str'>)
+2025-01-13 17:02:41,742 - DEBUG - Body: tg (type: <class 'str'>)
+2025-01-13 17:02:41,742 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:02:44,851 - INFO - Письмо успешно отправлено!
+2025-01-13 17:02:45,664 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-13 17:02:45,665 - DEBUG - Raw folder data: b'(\\Inbox) "/" "INBOX"'
+2025-01-13 17:02:45,666 - DEBUG -  - INBOX
+2025-01-13 17:02:45,667 - DEBUG - Raw folder data: b'(\\Spam) "/" "&BCEEPwQwBDw-"'
+2025-01-13 17:02:45,667 - DEBUG -  - &BCEEPwQwBDw-
+2025-01-13 17:02:45,668 - DEBUG - Raw folder data: b'(\\Sent) "/" "&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"'
+2025-01-13 17:02:45,669 - DEBUG -  - &BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-
+2025-01-13 17:02:45,670 - DEBUG - Raw folder data: b'(\\Drafts) "/" "&BCcENQRABD0EPgQyBDgEOgQ4-"'
+2025-01-13 17:02:45,670 - DEBUG -  - &BCcENQRABD0EPgQyBDgEOgQ4-
+2025-01-13 17:02:45,672 - DEBUG - Raw folder data: b'(\\Trash) "/" "&BBoEPgRABDcEOAQ9BDA-"'
+2025-01-13 17:02:45,673 - DEBUG -  - &BBoEPgRABDcEOAQ9BDA-
+2025-01-13 17:02:45,674 - DEBUG - Raw folder data: b'() "/" "INBOX/Social"'
+2025-01-13 17:02:45,675 - DEBUG -  - INBOX/Social
+2025-01-13 17:02:45,676 - DEBUG - Raw folder data: b'() "/" "INBOX/Newsletters"'
+2025-01-13 17:02:45,677 - DEBUG -  - INBOX/Newsletters
+2025-01-13 17:02:45,677 - DEBUG - Raw folder data: b'() "/" "INBOX/ToMyself"'
+2025-01-13 17:02:45,678 - DEBUG -  - INBOX/ToMyself
+2025-01-13 17:02:45,679 - DEBUG - Raw folder data: b'() "/" "INBOX/News"'
+2025-01-13 17:02:45,680 - DEBUG -  - INBOX/News
+2025-01-13 17:02:45,681 - DEBUG - Raw folder data: b'() "/" "INBOX/Public services"'
+2025-01-13 17:02:45,683 - DEBUG -  - INBOX/Public services
+2025-01-13 17:02:45,684 - DEBUG - Raw folder data: b'() "/" "INBOX/Receipts"'
+2025-01-13 17:02:45,684 - DEBUG -  - INBOX/Receipts
+2025-01-13 17:02:45,686 - DEBUG - Сравниваем папку 'inbox' с 'sent'
+2025-01-13 17:02:45,687 - DEBUG - Сравниваем папку 'inbox' с 'sent items'
+2025-01-13 17:02:45,688 - DEBUG - Сравниваем папку 'inbox' с 'sent mail'
+2025-01-13 17:02:45,689 - DEBUG - Сравниваем папку 'inbox' с 'отправленные'
+2025-01-13 17:02:45,690 - DEBUG - Сравниваем папку 'inbox' с 'sent messages'
+2025-01-13 17:02:45,692 - DEBUG - Сравниваем папку 'inbox' с 'отправленные сообщения'
+2025-01-13 17:02:45,693 - DEBUG - Сравниваем папку 'inbox' с 'mail/sent'
+2025-01-13 17:02:45,694 - DEBUG - Сравниваем папку 'inbox' с 'inbox.sent'
+2025-01-13 17:02:45,695 - DEBUG - Сравниваем папку 'inbox' с 'inbox.отправленные'
+2025-01-13 17:02:45,696 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'sent'
+2025-01-13 17:02:45,698 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'sent items'
+2025-01-13 17:02:45,699 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'sent mail'
+2025-01-13 17:02:45,700 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'отправленные'
+2025-01-13 17:02:45,701 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'sent messages'
+2025-01-13 17:02:45,702 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'отправленные сообщения'
+2025-01-13 17:02:45,703 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'mail/sent'
+2025-01-13 17:02:45,703 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'inbox.sent'
+2025-01-13 17:02:45,704 - DEBUG - Сравниваем папку '&bceepwqwbdw-' с 'inbox.отправленные'
+2025-01-13 17:02:45,705 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'sent'
+2025-01-13 17:02:45,706 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'sent items'
+2025-01-13 17:02:45,707 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'sent mail'
+2025-01-13 17:02:45,708 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'отправленные'
+2025-01-13 17:02:45,709 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'sent messages'
+2025-01-13 17:02:45,709 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'отправленные сообщения'
+2025-01-13 17:02:45,710 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'mail/sent'
+2025-01-13 17:02:45,711 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'inbox.sent'
+2025-01-13 17:02:45,712 - DEBUG - Сравниваем папку '&bb4eqgq,beaemaqybdsenqq9bd0eswq1-' с 'inbox.отправленные'
+2025-01-13 17:02:45,713 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'sent'
+2025-01-13 17:02:45,713 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'sent items'
+2025-01-13 17:02:45,714 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'sent mail'
+2025-01-13 17:02:45,715 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'отправленные'
+2025-01-13 17:02:45,716 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'sent messages'
+2025-01-13 17:02:45,716 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'отправленные сообщения'
+2025-01-13 17:02:45,717 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'mail/sent'
+2025-01-13 17:02:45,718 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'inbox.sent'
+2025-01-13 17:02:45,719 - DEBUG - Сравниваем папку '&bccenqrabd0epgqybdgeogq4-' с 'inbox.отправленные'
+2025-01-13 17:02:45,719 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'sent'
+2025-01-13 17:02:45,720 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'sent items'
+2025-01-13 17:02:45,720 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'sent mail'
+2025-01-13 17:02:45,721 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'отправленные'
+2025-01-13 17:02:45,722 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'sent messages'
+2025-01-13 17:02:45,723 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'отправленные сообщения'
+2025-01-13 17:02:45,724 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'mail/sent'
+2025-01-13 17:02:45,725 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'inbox.sent'
+2025-01-13 17:02:45,725 - DEBUG - Сравниваем папку '&bboepgrabdceoaq9bda-' с 'inbox.отправленные'
+2025-01-13 17:02:45,726 - DEBUG - Сравниваем папку 'inbox/social' с 'sent'
+2025-01-13 17:02:45,727 - DEBUG - Сравниваем папку 'inbox/social' с 'sent items'
+2025-01-13 17:02:45,728 - DEBUG - Сравниваем папку 'inbox/social' с 'sent mail'
+2025-01-13 17:02:45,729 - DEBUG - Сравниваем папку 'inbox/social' с 'отправленные'
+2025-01-13 17:02:45,730 - DEBUG - Сравниваем папку 'inbox/social' с 'sent messages'
+2025-01-13 17:02:45,730 - DEBUG - Сравниваем папку 'inbox/social' с 'отправленные сообщения'
+2025-01-13 17:02:45,731 - DEBUG - Сравниваем папку 'inbox/social' с 'mail/sent'
+2025-01-13 17:02:45,732 - DEBUG - Сравниваем папку 'inbox/social' с 'inbox.sent'
+2025-01-13 17:02:45,732 - DEBUG - Сравниваем папку 'inbox/social' с 'inbox.отправленные'
+2025-01-13 17:02:45,733 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'sent'
+2025-01-13 17:02:45,733 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'sent items'
+2025-01-13 17:02:45,734 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'sent mail'
+2025-01-13 17:02:45,735 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'отправленные'
+2025-01-13 17:02:45,735 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'sent messages'
+2025-01-13 17:02:45,736 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'отправленные сообщения'
+2025-01-13 17:02:45,736 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'mail/sent'
+2025-01-13 17:02:45,737 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'inbox.sent'
+2025-01-13 17:02:45,738 - DEBUG - Сравниваем папку 'inbox/newsletters' с 'inbox.отправленные'
+2025-01-13 17:02:45,739 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'sent'
+2025-01-13 17:02:45,739 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'sent items'
+2025-01-13 17:02:45,740 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'sent mail'
+2025-01-13 17:02:45,741 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'отправленные'
+2025-01-13 17:02:45,742 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'sent messages'
+2025-01-13 17:02:45,742 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'отправленные сообщения'
+2025-01-13 17:02:45,743 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'mail/sent'
+2025-01-13 17:02:45,743 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'inbox.sent'
+2025-01-13 17:02:45,744 - DEBUG - Сравниваем папку 'inbox/tomyself' с 'inbox.отправленные'
+2025-01-13 17:02:45,745 - DEBUG - Сравниваем папку 'inbox/news' с 'sent'
+2025-01-13 17:02:45,745 - DEBUG - Сравниваем папку 'inbox/news' с 'sent items'
+2025-01-13 17:02:45,746 - DEBUG - Сравниваем папку 'inbox/news' с 'sent mail'
+2025-01-13 17:02:45,746 - DEBUG - Сравниваем папку 'inbox/news' с 'отправленные'
+2025-01-13 17:02:45,747 - DEBUG - Сравниваем папку 'inbox/news' с 'sent messages'
+2025-01-13 17:02:45,748 - DEBUG - Сравниваем папку 'inbox/news' с 'отправленные сообщения'
+2025-01-13 17:02:45,749 - DEBUG - Сравниваем папку 'inbox/news' с 'mail/sent'
+2025-01-13 17:02:45,749 - DEBUG - Сравниваем папку 'inbox/news' с 'inbox.sent'
+2025-01-13 17:02:45,750 - DEBUG - Сравниваем папку 'inbox/news' с 'inbox.отправленные'
+2025-01-13 17:02:45,750 - DEBUG - Сравниваем папку 'inbox/public services' с 'sent'
+2025-01-13 17:02:45,751 - DEBUG - Сравниваем папку 'inbox/public services' с 'sent items'
+2025-01-13 17:02:45,751 - DEBUG - Сравниваем папку 'inbox/public services' с 'sent mail'
+2025-01-13 17:02:45,752 - DEBUG - Сравниваем папку 'inbox/public services' с 'отправленные'
+2025-01-13 17:02:45,752 - DEBUG - Сравниваем папку 'inbox/public services' с 'sent messages'
+2025-01-13 17:02:45,752 - DEBUG - Сравниваем папку 'inbox/public services' с 'отправленные сообщения'
+2025-01-13 17:02:45,753 - DEBUG - Сравниваем папку 'inbox/public services' с 'mail/sent'
+2025-01-13 17:02:45,754 - DEBUG - Сравниваем папку 'inbox/public services' с 'inbox.sent'
+2025-01-13 17:02:45,754 - DEBUG - Сравниваем папку 'inbox/public services' с 'inbox.отправленные'
+2025-01-13 17:02:45,755 - DEBUG - Сравниваем папку 'inbox/receipts' с 'sent'
+2025-01-13 17:02:45,756 - DEBUG - Сравниваем папку 'inbox/receipts' с 'sent items'
+2025-01-13 17:02:45,756 - DEBUG - Сравниваем папку 'inbox/receipts' с 'sent mail'
+2025-01-13 17:02:45,757 - DEBUG - Сравниваем папку 'inbox/receipts' с 'отправленные'
+2025-01-13 17:02:45,758 - DEBUG - Сравниваем папку 'inbox/receipts' с 'sent messages'
+2025-01-13 17:02:45,758 - DEBUG - Сравниваем папку 'inbox/receipts' с 'отправленные сообщения'
+2025-01-13 17:02:45,759 - DEBUG - Сравниваем папку 'inbox/receipts' с 'mail/sent'
+2025-01-13 17:02:45,760 - DEBUG - Сравниваем папку 'inbox/receipts' с 'inbox.sent'
+2025-01-13 17:02:45,760 - DEBUG - Сравниваем папку 'inbox/receipts' с 'inbox.отправленные'
+2025-01-13 17:02:45,761 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-13 17:02:46,689 - ERROR - Не удалось выбрать папку Sent: [b'[NONEXISTENT] Folder not exists']
+2025-01-13 17:02:46,792 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 17:05:13,468 - INFO - Отправка письма начата...
+2025-01-13 17:05:13,469 - DEBUG - From: "test.login.vkb@yandex.ru" <test.login.vkb@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:05:13,469 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:05:13,470 - DEBUG - Subject: hg (type: <class 'str'>)
+2025-01-13 17:05:13,471 - DEBUG - Body: hg (type: <class 'str'>)
+2025-01-13 17:05:13,471 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:05:15,891 - INFO - Письмо успешно отправлено!
+2025-01-13 17:05:17,017 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-13 17:05:17,018 - DEBUG - Raw folder data: b'(\\HasChildren \\Unmarked \\Drafts) "|" Drafts'
+2025-01-13 17:05:17,019 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Templates) "|" "Drafts|template"'
+2025-01-13 17:05:17,019 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\NoInferiors) "|" INBOX'
+2025-01-13 17:05:17,020 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked) "|" Outbox'
+2025-01-13 17:05:17,021 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Sent) "|" Sent'
+2025-01-13 17:05:17,022 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Unmarked \\Junk) "|" Spam'
+2025-01-13 17:05:17,023 - DEBUG - Raw folder data: b'(\\HasNoChildren \\Marked \\Trash) "|" Trash'
+2025-01-13 17:05:17,024 - WARNING - Папка 'Отправленные' не найдена.
+2025-01-13 17:05:18,860 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:05:18,963 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:16:39,107 - INFO - Отправка письма начата...
+2025-01-13 17:16:39,107 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:16:39,108 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:16:39,109 - DEBUG - Subject: kkk (type: <class 'str'>)
+2025-01-13 17:16:39,109 - DEBUG - Body: llll (type: <class 'str'>)
+2025-01-13 17:16:39,111 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:16:41,893 - INFO - Письмо успешно отправлено!
+2025-01-13 17:16:41,896 - ERROR - Произошла ошибка при отправке письма: 'NewMessage' object has no attribute 'connection'
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 803, in send_email
+    save_success = self.save_to_sent(email_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 168, in save_to_sent
+    sent_folder = self.connection.find_sent_folder_any()
+                  ^^^^^^^^^^^^^^^
+AttributeError: 'NewMessage' object has no attribute 'connection'
+2025-01-13 17:26:14,028 - INFO - Отправка письма начата...
+2025-01-13 17:26:14,029 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:26:14,030 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:26:14,031 - DEBUG - Subject: 123 (type: <class 'str'>)
+2025-01-13 17:26:14,031 - DEBUG - Body: 123 (type: <class 'str'>)
+2025-01-13 17:26:14,031 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:26:16,891 - INFO - Письмо успешно отправлено!
+2025-01-13 17:26:16,893 - ERROR - Произошла ошибка при отправке письма: 'NewMessage' object has no attribute 'find_sent_folder_any'
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 797, in send_email
+    save_success = self.save_to_sent(email_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 162, in save_to_sent
+    sent_folder = self.find_sent_folder_any()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NewMessage' object has no attribute 'find_sent_folder_any'. Did you mean: 'find_sent_folder'?
+2025-01-13 17:27:22,040 - INFO - Отправка письма начата...
+2025-01-13 17:27:22,041 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:27:22,041 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:27:22,041 - DEBUG - Subject: 1234 (type: <class 'str'>)
+2025-01-13 17:27:22,043 - DEBUG - Body: 1234 (type: <class 'str'>)
+2025-01-13 17:27:22,043 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:27:27,547 - INFO - Письмо успешно отправлено!
+2025-01-13 17:27:27,549 - ERROR - Произошла ошибка при отправке письма: NewMessage.find_sent_folder() missing 1 required positional argument: 'mail'
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 797, in send_email
+    save_success = self.save_to_sent(email_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 162, in save_to_sent
+    sent_folder = self.find_sent_folder()
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: NewMessage.find_sent_folder() missing 1 required positional argument: 'mail'
+2025-01-13 17:28:29,977 - INFO - Отправка письма начата...
+2025-01-13 17:28:29,978 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:28:29,979 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:28:29,979 - DEBUG - Subject: 5656 (type: <class 'str'>)
+2025-01-13 17:28:29,980 - DEBUG - Body: 5656 (type: <class 'str'>)
+2025-01-13 17:28:29,980 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:28:37,489 - INFO - Письмо успешно отправлено!
+2025-01-13 17:28:37,491 - ERROR - Ошибка при поиске папки 'Отправленные': 'str' object has no attribute 'list'
+2025-01-13 17:28:38,307 - ERROR - Не удалось выбрать папку Sent: [b'[NONEXISTENT] Folder not exists']
+2025-01-13 17:28:38,410 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 17:29:27,121 - INFO - Отправка письма начата...
+2025-01-13 17:29:27,122 - DEBUG - From: "test.login.vkb@yandex.ru" <test.login.vkb@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:29:27,123 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:29:27,123 - DEBUG - Subject: 12345 (type: <class 'str'>)
+2025-01-13 17:29:27,124 - DEBUG - Body: 12345 (type: <class 'str'>)
+2025-01-13 17:29:27,124 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:29:29,612 - INFO - Письмо успешно отправлено!
+2025-01-13 17:29:29,614 - ERROR - Ошибка при поиске папки 'Отправленные': 'str' object has no attribute 'list'
+2025-01-13 17:29:31,409 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:29:31,558 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:34:30,077 - INFO - Отправка письма начата...
+2025-01-13 17:34:30,078 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:34:30,078 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:34:30,079 - DEBUG - Subject: tgh (type: <class 'str'>)
+2025-01-13 17:34:30,079 - DEBUG - Body: tgh (type: <class 'str'>)
+2025-01-13 17:34:30,080 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:34:32,829 - INFO - Письмо успешно отправлено!
+2025-01-13 17:34:32,836 - ERROR - Произошла ошибка при отправке письма: cannot access local variable 'mail' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 797, in send_email
+    save_success = self.save_to_sent(email_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 162, in save_to_sent
+    sent_folder = self.find_sent_folder(mail)
+                                        ^^^^
+UnboundLocalError: cannot access local variable 'mail' where it is not associated with a value
+2025-01-13 17:39:47,644 - INFO - Отправка письма начата...
+2025-01-13 17:39:47,645 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:39:47,645 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:39:47,646 - DEBUG - Subject: 123 (type: <class 'str'>)
+2025-01-13 17:39:47,646 - DEBUG - Body: 123 (type: <class 'str'>)
+2025-01-13 17:39:47,647 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:39:50,588 - INFO - Письмо успешно отправлено!
+2025-01-13 17:39:51,405 - DEBUG - Доступные папки IMAP-сервера:
+2025-01-13 17:39:51,406 - DEBUG - Raw folder data: b'(\\Inbox) "/" "INBOX"'
+2025-01-13 17:39:51,407 - DEBUG -  - INBOX
+2025-01-13 17:39:51,408 - DEBUG - Raw folder data: b'(\\Spam) "/" "&BCEEPwQwBDw-"'
+2025-01-13 17:39:51,409 - DEBUG -  - &BCEEPwQwBDw-
+2025-01-13 17:39:51,409 - DEBUG - Raw folder data: b'(\\Sent) "/" "&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"'
+2025-01-13 17:39:51,410 - DEBUG -  - &BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-
+2025-01-13 17:39:51,411 - DEBUG - Raw folder data: b'(\\Drafts) "/" "&BCcENQRABD0EPgQyBDgEOgQ4-"'
+2025-01-13 17:39:51,412 - DEBUG -  - &BCcENQRABD0EPgQyBDgEOgQ4-
+2025-01-13 17:39:51,412 - DEBUG - Raw folder data: b'(\\Trash) "/" "&BBoEPgRABDcEOAQ9BDA-"'
+2025-01-13 17:39:51,413 - DEBUG -  - &BBoEPgRABDcEOAQ9BDA-
+2025-01-13 17:39:51,414 - DEBUG - Raw folder data: b'() "/" "INBOX/Social"'
+2025-01-13 17:39:51,415 - DEBUG -  - INBOX/Social
+2025-01-13 17:39:51,415 - DEBUG - Raw folder data: b'() "/" "INBOX/Newsletters"'
+2025-01-13 17:39:51,416 - DEBUG -  - INBOX/Newsletters
+2025-01-13 17:39:51,417 - DEBUG - Raw folder data: b'() "/" "INBOX/ToMyself"'
+2025-01-13 17:39:51,418 - DEBUG -  - INBOX/ToMyself
+2025-01-13 17:39:51,419 - DEBUG - Raw folder data: b'() "/" "INBOX/News"'
+2025-01-13 17:39:51,420 - DEBUG -  - INBOX/News
+2025-01-13 17:39:51,422 - DEBUG - Raw folder data: b'() "/" "INBOX/Public services"'
+2025-01-13 17:39:51,423 - DEBUG -  - INBOX/Public services
+2025-01-13 17:39:51,423 - DEBUG - Raw folder data: b'() "/" "INBOX/Receipts"'
+2025-01-13 17:39:51,424 - DEBUG -  - INBOX/Receipts
+2025-01-13 17:39:51,426 - ERROR - Ошибка при поиске папки 'Отправленные': 'bytes' object has no attribute 'flags'
+2025-01-13 17:39:51,508 - ERROR - Не удалось выбрать папку Sent: [b'[NONEXISTENT] Folder not exists']
+2025-01-13 17:39:51,610 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 17:41:10,752 - INFO - Отправка письма начата...
+2025-01-13 17:41:10,753 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:41:10,753 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:41:10,754 - DEBUG - Subject: 11 (type: <class 'str'>)
+2025-01-13 17:41:10,755 - DEBUG - Body: 11 (type: <class 'str'>)
+2025-01-13 17:41:10,755 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:41:13,637 - INFO - Письмо успешно отправлено!
+2025-01-13 17:41:14,558 - ERROR - Общая ошибка при сохранении письма в папку 'Отправленные': can't concat ellipsis to bytes
+2025-01-13 17:41:14,559 - ERROR - Не удалось сохранить письмо в папку 'Отправленные'.
+2025-01-13 17:46:56,979 - INFO - Отправка письма начата...
+2025-01-13 17:46:56,980 - DEBUG - From: "test.login.vkb@mail.ru" <test.login.vkb@mail.ru> (type: <class 'str'>)
+2025-01-13 17:46:56,981 - DEBUG - To: ['test.login.vkb@yandex.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:46:56,982 - DEBUG - Subject: 25565 (type: <class 'str'>)
+2025-01-13 17:46:56,982 - DEBUG - Body: 25565 (type: <class 'str'>)
+2025-01-13 17:46:56,983 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:46:59,965 - INFO - Письмо успешно отправлено!
+2025-01-13 17:47:00,681 - DEBUG - Найдена папка с флагом \Sent: &BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-
+2025-01-13 17:47:01,194 - INFO - Письмо успешно сохранено в папку '&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-'.
+2025-01-13 17:47:01,296 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:47:49,636 - INFO - Отправка письма начата...
+2025-01-13 17:47:49,637 - DEBUG - From: "test.login.vkb@yandex.ru" <test.login.vkb@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:47:49,637 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:47:49,638 - DEBUG - Subject: 65236 (type: <class 'str'>)
+2025-01-13 17:47:49,638 - DEBUG - Body: 65236 (type: <class 'str'>)
+2025-01-13 17:47:49,639 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:47:52,088 - INFO - Письмо успешно отправлено!
+2025-01-13 17:47:53,318 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 17:47:54,340 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:47:54,443 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:48:56,952 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:48:57,023 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-13 17:49:46,496 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 17:49:48,572 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:49:48,587 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 17:49:48,587 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 17:49:48,593 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp4w3529fu.crt
+2025-01-13 17:49:48,995 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp4w3529fu.crt: OK
+2025-01-13 17:49:48,996 - INFO - Email найден в сертификате.
+2025-01-13 17:49:49,047 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 17:49:49,092 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp4w3529fu.crt
+2025-01-13 17:49:52,571 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 17:49:52,612 - DEBUG - Сгенерированный симметричный ключ: b8b1ead202158bac95cfc6487d528b2bc4d1288717f449a7fcf71febe5226587
+2025-01-13 17:49:55,103 - INFO - Запись для test.login.vkb@mail.ru добавлена в .\MailClient-master\local_secret\contacts.json.
+2025-01-13 17:49:55,105 - INFO - Добавлена новая запись для test.login.vkb@mail.ru.
+2025-01-13 17:49:55,109 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 17:49:55,535 - DEBUG - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png зашифрован и сохранён как C:\D\Диплом\temp\app.png.enc
+2025-01-13 17:49:55,537 - INFO - Отправка письма начата...
+2025-01-13 17:49:55,538 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:49:55,538 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:49:55,539 - DEBUG - Subject: enc/move (type: <class 'str'>)
+2025-01-13 17:49:55,539 - DEBUG - Body: Eyd0KPeJ8oYERqx2 (type: <class 'str'>)
+2025-01-13 17:49:55,547 - DEBUG - Attached Files: ['C:\\D\\Диплом\\temp\\app.png.enc'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:49:55,572 - DEBUG - Вложение app.png.enc добавлено к EmailMessage.
+2025-01-13 17:49:59,068 - INFO - Письмо успешно отправлено!
+2025-01-13 17:50:00,297 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 17:50:01,435 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:50:01,526 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:50:01,528 - DEBUG - Удалён временный файл: C:\D\Диплом\temp\app.png.enc
+2025-01-13 17:50:01,531 - WARNING - Папка C:\D\Диплом\temp не пуста и не может быть удалена.
+2025-01-13 17:50:26,834 - INFO - Начало процесса дешифрования письма.
+2025-01-13 17:50:26,834 - DEBUG - Путь к JSON-файлу: ./MailClient-master/local_secret/Obn4zh@yandex.ru/contacts.json, Email отправителя: test.login.vkb@mail.ru
+2025-01-13 17:50:26,835 - DEBUG - Чтение JSON-файла.
+2025-01-13 17:50:26,835 - DEBUG - Загруженные данные: []
+2025-01-13 17:50:26,836 - DEBUG - Данные уже являются списком.
+2025-01-13 17:50:26,836 - INFO - Поиск записи для email: test.login.vkb@mail.ru
+2025-01-13 17:50:26,837 - WARNING - Запись для email test.login.vkb@mail.ru не найдена в файле ./MailClient-master/local_secret/Obn4zh@yandex.ru/contacts.json.
+2025-01-13 17:50:34,484 - INFO - Начало процесса дешифрования письма.
+2025-01-13 17:50:34,484 - DEBUG - Путь к JSON-файлу: ./MailClient-master/local_secret/Obn4zh@yandex.ru/contacts.json, Email отправителя: test.login.vkb@mail.ru
+2025-01-13 17:50:34,485 - DEBUG - Чтение JSON-файла.
+2025-01-13 17:50:34,485 - DEBUG - Загруженные данные: []
+2025-01-13 17:50:34,486 - DEBUG - Данные уже являются списком.
+2025-01-13 17:50:34,486 - INFO - Поиск записи для email: test.login.vkb@mail.ru
+2025-01-13 17:50:34,487 - WARNING - Запись для email test.login.vkb@mail.ru не найдена в файле ./MailClient-master/local_secret/Obn4zh@yandex.ru/contacts.json.
+2025-01-13 17:52:43,915 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 17:52:51,122 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:52:51,127 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 17:52:51,129 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 17:52:51,134 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpxvybhhlw.crt
+2025-01-13 17:52:51,237 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpxvybhhlw.crt: OK
+2025-01-13 17:52:51,238 - INFO - Email найден в сертификате.
+2025-01-13 17:52:51,280 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 17:52:51,328 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpxvybhhlw.crt
+2025-01-13 17:52:55,047 - ERROR - Приватный ключ не найден или выбор устройства отменён пользователем.
+2025-01-13 17:52:57,527 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:52:57,542 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 17
+2025-01-13 17:53:21,944 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-13 17:53:22,503 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1107
+2025-01-13 17:53:22,561 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:53:22,585 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-13 17:53:46,456 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 17:53:47,580 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:53:47,587 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 17:53:47,588 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 17:53:47,592 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp97u0qh58.crt
+2025-01-13 17:53:47,680 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp97u0qh58.crt: OK
+2025-01-13 17:53:47,681 - INFO - Email найден в сертификате.
+2025-01-13 17:53:47,730 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 17:53:47,770 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp97u0qh58.crt
+2025-01-13 17:53:50,231 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 17:53:50,272 - DEBUG - Сгенерированный симметричный ключ: 2dcc7cf129ce7a8a1f09ceb2c6167c53f9c704ab039b522a9b050ee659a824d4
+2025-01-13 17:53:50,274 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 17:53:50,278 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 17:53:50,725 - DEBUG - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png зашифрован и сохранён как C:\D\Диплом\temp\app.png.enc
+2025-01-13 17:53:50,727 - INFO - Отправка письма начата...
+2025-01-13 17:53:50,728 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:53:50,728 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:53:50,729 - DEBUG - Subject: enc/crypto (type: <class 'str'>)
+2025-01-13 17:53:50,730 - DEBUG - Body: BlnsTIb5tw0XcM1SKcI= (type: <class 'str'>)
+2025-01-13 17:53:50,731 - DEBUG - Attached Files: ['C:\\D\\Диплом\\temp\\app.png.enc'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:53:50,774 - DEBUG - Вложение app.png.enc добавлено к EmailMessage.
+2025-01-13 17:53:53,368 - INFO - Письмо успешно отправлено!
+2025-01-13 17:53:54,391 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 17:53:55,313 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:53:55,416 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 17:53:55,418 - DEBUG - Удалён временный файл: C:\D\Диплом\temp\app.png.enc
+2025-01-13 17:53:55,419 - WARNING - Папка C:\D\Диплом\temp не пуста и не может быть удалена.
+2025-01-13 17:55:17,240 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:55:17,240 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 17
+2025-01-13 17:55:34,079 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-13 17:55:34,640 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1107
+2025-01-13 17:55:34,699 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:55:34,724 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-13 17:55:56,697 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 17:55:56,713 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 17:55:56,714 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 17:55:56,720 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp8v3jba68.crt
+2025-01-13 17:55:56,815 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp8v3jba68.crt: OK
+2025-01-13 17:55:56,816 - INFO - Email найден в сертификате.
+2025-01-13 17:55:56,859 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 17:55:56,904 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp8v3jba68.crt
+2025-01-13 17:55:59,803 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 17:55:59,846 - DEBUG - Сгенерированный симметричный ключ: 4e1325cbc448989c897551c563830bc82b611034acf9d680a6aa217d5b6a5eda
+2025-01-13 17:55:59,847 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 17:55:59,851 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 17:55:59,853 - INFO - Отправка письма начата...
+2025-01-13 17:55:59,854 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 17:55:59,854 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 17:55:59,855 - DEBUG - Subject: enc/crip (type: <class 'str'>)
+2025-01-13 17:55:59,856 - DEBUG - Body: vEbX3QLO2a/iLh2I (type: <class 'str'>)
+2025-01-13 17:55:59,856 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 17:56:02,089 - INFO - Письмо успешно отправлено!
+2025-01-13 17:56:03,010 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 17:56:03,932 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 17:56:04,035 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 18:08:12,310 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:08:12,310 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 17
+2025-01-13 18:08:27,924 - DEBUG - Starting new HTTP connection (1): 192.168.31.12:5000
+2025-01-13 18:08:28,438 - DEBUG - http://192.168.31.12:5000 "POST /sign_certificate HTTP/1.1" 200 1107
+2025-01-13 18:08:28,498 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:08:28,522 - DEBUG - http://127.0.0.1:5000 "POST /add_user_cert HTTP/1.1" 200 21
+2025-01-13 18:09:03,184 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:09:03,191 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 18:09:03,193 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 18:09:03,198 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp1l6t1g5e.crt
+2025-01-13 18:09:03,287 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp1l6t1g5e.crt: OK
+2025-01-13 18:09:03,288 - INFO - Email найден в сертификате.
+2025-01-13 18:09:03,330 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 18:09:03,373 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp1l6t1g5e.crt
+2025-01-13 18:09:06,432 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 18:09:06,473 - DEBUG - Сгенерированный симметричный ключ: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 18:09:06,474 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 18:09:06,477 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 18:09:06,479 - INFO - Отправка письма начата...
+2025-01-13 18:09:06,480 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 18:09:06,480 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 18:09:06,481 - DEBUG - Subject: enc/testenc (type: <class 'str'>)
+2025-01-13 18:09:06,481 - DEBUG - Body: LNNWUyDWOnwWc38Q9kfN (type: <class 'str'>)
+2025-01-13 18:09:06,482 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 18:09:09,164 - INFO - Письмо успешно отправлено!
+2025-01-13 18:09:10,083 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 18:09:10,902 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 18:09:11,020 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 18:10:15,091 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:10:15,096 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 18:10:15,097 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 18:10:15,101 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp9sy3wi3a.crt
+2025-01-13 18:10:15,205 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp9sy3wi3a.crt: OK
+2025-01-13 18:10:15,205 - INFO - Email найден в сертификате.
+2025-01-13 18:10:15,248 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 18:10:15,295 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp9sy3wi3a.crt
+2025-01-13 18:10:18,285 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 18:10:18,326 - DEBUG - Сгенерированный симметричный ключ: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 18:10:18,328 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 18:10:18,332 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 18:10:18,334 - INFO - Отправка письма начата...
+2025-01-13 18:10:18,335 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 18:10:18,335 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 18:10:18,336 - DEBUG - Subject: enc/123 (type: <class 'str'>)
+2025-01-13 18:10:18,336 - DEBUG - Body: B8IlaN+NYdkMinQ= (type: <class 'str'>)
+2025-01-13 18:10:18,337 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 18:10:20,641 - INFO - Письмо успешно отправлено!
+2025-01-13 18:10:21,869 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 18:10:22,790 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 18:10:22,893 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 18:11:29,246 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:11:29,252 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 18:11:29,253 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 18:11:29,257 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpk1gt3t1m.crt
+2025-01-13 18:11:29,349 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpk1gt3t1m.crt: OK
+2025-01-13 18:11:29,350 - INFO - Email найден в сертификате.
+2025-01-13 18:11:29,390 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 18:11:29,430 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpk1gt3t1m.crt
+2025-01-13 18:11:33,461 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 18:11:33,504 - DEBUG - Сгенерированный симметричный ключ: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 18:11:33,505 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 18:11:33,511 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 18:11:33,513 - INFO - Отправка письма начата...
+2025-01-13 18:11:33,514 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 18:11:33,515 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 18:11:33,516 - DEBUG - Subject: enc/1234 (type: <class 'str'>)
+2025-01-13 18:11:33,516 - DEBUG - Body: Ol+/a8wtOLzlp5LL (type: <class 'str'>)
+2025-01-13 18:11:33,517 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 18:11:36,009 - INFO - Письмо успешно отправлено!
+2025-01-13 18:11:37,033 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 18:11:37,954 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 18:11:38,057 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 18:13:11,046 - ERROR - Произошла ошибка при отправке письма: cannot access local variable 'config_parser' where it is not associated with a value
+Traceback (most recent call last):
+  File "c:\D\Диплом\MailClient-master\newmessage.py", line 408, in send_email
+    my_email = config_parser.get("MAILSERVER", "mail")
+               ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'config_parser' where it is not associated with a value
+2025-01-13 18:14:21,436 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 18:14:21,443 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 18:14:21,444 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 18:14:21,449 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp1vcvyhi8.crt
+2025-01-13 18:14:21,556 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp1vcvyhi8.crt: OK
+2025-01-13 18:14:21,557 - INFO - Email найден в сертификате.
+2025-01-13 18:14:21,602 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 18:14:21,660 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp1vcvyhi8.crt
+2025-01-13 18:14:25,210 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 18:14:25,249 - DEBUG - Сгенерированный симметричный ключ: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 18:14:27,866 - INFO - Запись для test.login.vkb@mail.ru добавлена в .\MailClient-master\local_secret\Obn4zh@yandex.ru\contacts.json.
+2025-01-13 18:14:27,868 - INFO - Добавлена новая запись для test.login.vkb@mail.ru.
+2025-01-13 18:14:27,872 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 18:14:27,874 - INFO - Отправка письма начата...
+2025-01-13 18:14:27,874 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 18:14:27,876 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 18:14:27,876 - DEBUG - Subject: enc/456 (type: <class 'str'>)
+2025-01-13 18:14:27,877 - DEBUG - Body: oTXsdK7Woi1QUUc= (type: <class 'str'>)
+2025-01-13 18:14:27,877 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 18:14:30,233 - INFO - Письмо успешно отправлено!
+2025-01-13 18:14:31,016 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 18:14:31,730 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 18:14:31,836 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 18:14:55,382 - INFO - Начало процесса дешифрования письма.
+2025-01-13 18:14:55,383 - DEBUG - Путь к JSON-файлу: ./MailClient-master/local_secret/Obn4zh@yandex.ru/contacts.json, Email отправителя: test.login.vkb@mail.ru
+2025-01-13 18:14:55,383 - DEBUG - Чтение JSON-файла.
+2025-01-13 18:14:55,384 - DEBUG - Загруженные данные: [{'email': 'test.login.vkb@mail.ru', 'bytes': 'U2FsdGVkX1/bkFsHOvIaZA6wFeNwFA5XlLipHlo6Hgkho4aQ5UjIFl4ejgcG35pf'}]
+2025-01-13 18:14:55,384 - DEBUG - Данные уже являются списком.
+2025-01-13 18:14:55,385 - INFO - Поиск записи для email: test.login.vkb@mail.ru
+2025-01-13 18:14:55,385 - INFO - Найдена запись для email: test.login.vkb@mail.ru
+2025-01-13 18:14:55,386 - DEBUG - Расшифрованные байты секрета: 53616c7465645f5fdb905b073af21a640eb015e370140e5794b8a91e5a3a1e0921a38690e548c8165e1e8e0706df9a5f
+2025-01-13 18:14:58,298 - DEBUG - Путь к локальному симметричному ключу: E:\\Obn4zh@yandex.ru\\local_symmetric.key
+2025-01-13 18:14:58,299 - INFO - Начало дешифрования секрета с помощью OpenSSL.
+2025-01-13 18:14:58,365 - DEBUG - Возвращаемое значение секрета: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 18:14:58,365 - INFO - Секрет успешно дешифрован.
+2025-01-13 18:14:58,366 - INFO - Начало дешифрования тела письма.
+2025-01-13 18:14:58,371 - DEBUG - Тело письма успешно дешифровано.
+2025-01-13 18:14:58,372 - DEBUG - Временная директория для файлов: C:\D\Диплом\temp
+2025-01-13 18:14:58,373 - INFO - Вложения отсутствуют для дешифрования.
+2025-01-13 18:14:58,373 - INFO - Обновление интерфейса с расшифрованными данными.
+2025-01-13 18:14:59,528 - INFO - Процесс дешифрования завершён успешно.
+2025-01-13 19:46:13,140 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 19:46:13,140 - DEBUG - http://127.0.0.1:5000 "GET /check_user?email=10fc296f4b9572e6c342761a2f36184ec0adfa2a0d16fa282a6455d49563c579 HTTP/1.1" 200 16
+2025-01-13 19:48:48,345 - INFO - Отправка письма начата...
+2025-01-13 19:48:48,345 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 19:48:48,346 - DEBUG - To: ['Tr1xt3rTrade@gmail.com'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 19:48:48,346 - DEBUG - Subject: 123123123123 (type: <class 'str'>)
+2025-01-13 19:48:48,413 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 19:48:50,142 - INFO - Письмо успешно отправлено!
+2025-01-13 19:48:50,657 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 19:48:51,202 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 19:48:51,239 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 19:55:34,843 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/Рабочий стол.zip был прикреплён
+2025-01-13 19:55:39,658 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 19:55:39,668 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 19:55:39,669 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 19:55:39,674 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmpov4toojk.crt
+2025-01-13 19:55:39,872 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmpov4toojk.crt: OK
+2025-01-13 19:55:39,873 - INFO - Email найден в сертификате.
+2025-01-13 19:55:39,899 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 19:55:39,932 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmpov4toojk.crt
+2025-01-13 19:55:50,318 - ERROR - Приватный ключ не найден или выбор устройства отменён пользователем.
+2025-01-13 19:56:01,132 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-13 19:56:01,141 - DEBUG - http://127.0.0.1:5000 "GET /get_user_cert?email=cc81707d8b73a8de7e0224bc3bf82b7da2df0dc5c7fad9ed25bcd66f1e6c29ea HTTP/1.1" 200 1270
+2025-01-13 19:56:01,142 - DEBUG - Сертификат получен: b'-----BEGIN CERTIFICATE-----\r\nMIICTzCCAfqgAwIBAgIURJtNDsq2xpJXBSxsGYaoaTgmgM0wDAYIKoUDBwEBAwIF\r\nADBeMQswCQYDVQQGEwJSVTEWMBQGA1UECAwNUm9zdG92LW9uLURvbjEWMBQGA1UE\r\nBwwNUm9zdG92IG9ibGFzdDENMAsGA1UECgwERFNUVTEQMA4GA1UEAwwHUm9vdCBD\r\nQTAeFw0yNTAxMDgwODM5NDBaFw0yNjAxMDgwODM5NDBaMIGiMSUwIwYJKoZIhvcN\r\nAQkBFhZ0ZXN0LmxvZ2luLnZrYkBtYWlsLnJ1MR4wHAYDVQQDDBVEb25lciBZcnlp\r\nIEFuZHJlZXZpY2gxDTALBgNVBAsMBElpVlQxDTALBgNVBAoMBERTVFUxFjAUBgNV\r\nBAcMDVJvc3Rvdi1vbi1Eb24xFjAUBgNVBAgMDVJvc3RvdiBvYmxhc3QxCzAJBgNV\r\nBAYTAlJVMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIDQwAEQDhs\r\nrHqN321kBLivPFG7YhTS3y0iwLJdKP054f9IJnVonKG3ORxkvEvNonL/yvl+S85P\r\njp1JS+m33qRvUdfMScOjQjBAMB0GA1UdDgQWBBS0uMtuw1QZ/AW0Wb+pYNQZkvEk\r\nwTAfBgNVHSMEGDAWgBQnvNwEZSEPAwk0jvtUdkjiya467DAMBggqhQMHAQEDAgUA\r\nA0EAipd2OO6wXFUz6CJjmAR82W2iwvRx8T53U5J66u9tkWOXWpAsixSDSt5IQFne\r\naDF1qV6Hqo0FJA0Q2nV58yCiJA==\r\n-----END CERTIFICATE-----\r\n'
+2025-01-13 19:56:01,144 - DEBUG - Сертификат записан во временный файл: C:\Users\Obn4z\AppData\Local\Temp\tmp1atw8ka6.crt
+2025-01-13 19:56:01,213 - INFO - Сертификат успешно верифицирован: C:\Users\Obn4z\AppData\Local\Temp\tmp1atw8ka6.crt: OK
+2025-01-13 19:56:01,214 - INFO - Email найден в сертификате.
+2025-01-13 19:56:01,242 - DEBUG - Публичный ключ успешно извлечён.
+2025-01-13 19:56:01,271 - DEBUG - Временный файл сертификата удалён: C:\Users\Obn4z\AppData\Local\Temp\tmp1atw8ka6.crt
+2025-01-13 19:56:04,559 - DEBUG - Приватный ключ успешно извлечён из E:\\Obn4zh@yandex.ru\\private_key.key
+2025-01-13 19:56:04,588 - DEBUG - Сгенерированный симметричный ключ: ebb8b6b674889af4d1501e623ad6acec9d670dbe2cb1c7b6920f25ec4cbb3e9b
+2025-01-13 19:56:04,589 - INFO - Запись для test.login.vkb@mail.ru уже существует. Обновление не требуется.
+2025-01-13 19:56:04,592 - DEBUG - Тело сообщения успешно зашифровано.
+2025-01-13 20:16:55,390 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/Рабочий стол.zip был прикреплён
+2025-01-13 20:17:07,176 - INFO - Отправка письма начата...
+2025-01-13 20:17:07,177 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 20:17:07,177 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:07,178 - DEBUG - Subject: тест архив (type: <class 'str'>)
+2025-01-13 20:17:07,178 - DEBUG - Body: архив (type: <class 'str'>)
+2025-01-13 20:17:07,180 - DEBUG - Attached Files: ['C:/Users/Obn4z/OneDrive/Рабочий стол/Рабочий стол.zip'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:07,851 - DEBUG - Вложение Рабочий стол.zip добавлено к EmailMessage.
+2025-01-13 20:17:13,232 - ERROR - Не удалось отправить письмо через SMTP-клиент.
+2025-01-13 20:17:21,373 - INFO - Файл Рабочий стол.zip был удалён из вложений
+2025-01-13 20:17:22,266 - INFO - Отправка письма начата...
+2025-01-13 20:17:22,267 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 20:17:22,267 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:22,267 - DEBUG - Subject: тест архив (type: <class 'str'>)
+2025-01-13 20:17:22,268 - DEBUG - Body: архив (type: <class 'str'>)
+2025-01-13 20:17:22,268 - DEBUG - Attached Files: [] (type: <class 'list'>, elements: [])
+2025-01-13 20:17:24,013 - INFO - Письмо успешно отправлено!
+2025-01-13 20:17:24,613 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 20:17:25,401 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 20:17:25,443 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
+2025-01-13 20:17:37,866 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/Рабочий стол.zip был прикреплён
+2025-01-13 20:17:39,278 - INFO - Отправка письма начата...
+2025-01-13 20:17:39,278 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 20:17:39,278 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:39,279 - DEBUG - Subject:  (type: <class 'str'>)
+2025-01-13 20:17:39,279 - DEBUG - Body:  (type: <class 'str'>)
+2025-01-13 20:17:39,279 - DEBUG - Attached Files: ['C:/Users/Obn4z/OneDrive/Рабочий стол/Рабочий стол.zip'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:39,837 - DEBUG - Вложение Рабочий стол.zip добавлено к EmailMessage.
+2025-01-13 20:17:44,645 - ERROR - Не удалось отправить письмо через SMTP-клиент.
+2025-01-13 20:17:46,574 - INFO - Файл Рабочий стол.zip был удалён из вложений
+2025-01-13 20:17:48,271 - INFO - Файл C:/Users/Obn4z/OneDrive/Рабочий стол/app.png был прикреплён
+2025-01-13 20:17:49,260 - INFO - Отправка письма начата...
+2025-01-13 20:17:49,261 - DEBUG - From: "Obn4zh@yandex.ru" <Obn4zh@yandex.ru> (type: <class 'str'>)
+2025-01-13 20:17:49,261 - DEBUG - To: ['test.login.vkb@mail.ru'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:49,262 - DEBUG - Subject:  (type: <class 'str'>)
+2025-01-13 20:17:49,262 - DEBUG - Body:  (type: <class 'str'>)
+2025-01-13 20:17:49,262 - DEBUG - Attached Files: ['C:/Users/Obn4z/OneDrive/Рабочий стол/app.png'] (type: <class 'list'>, elements: [<class 'str'>])
+2025-01-13 20:17:49,270 - DEBUG - Вложение app.png добавлено к EmailMessage.
+2025-01-13 20:17:51,055 - INFO - Письмо успешно отправлено!
+2025-01-13 20:17:51,667 - DEBUG - Найдена папка с флагом \Sent: None
+2025-01-13 20:17:52,293 - INFO - Письмо успешно сохранено в папку 'Sent'.
+2025-01-13 20:17:52,338 - INFO - Письмо успешно сохранено в папку 'Отправленные'.
