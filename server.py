@@ -1,11 +1,30 @@
-from flask import Flask, request, jsonify
-import sqlite3
+"""Flask-based API for simple secure mail storage.
+
+The module exposes endpoints for storing user certificates, Certificate
+Authority (CA) data and signing CSRs.  The original student project relied on
+SQLite files that were checked into the repository which makes local testing
+and CI uncomfortable.  The code below now resolves database locations lazily
+using environment variables which allows the tests to work with temporary
+databases without touching the repository tree.
+"""
+
+from __future__ import annotations
+
 import base64
+import logging
+import os
+import sqlite3
 import subprocess
 import tempfile
-import os
-import logging
 import time
+from pathlib import Path
+
+from flask import Flask, jsonify, request
+
+MAIN_DB_ENV = "SECURED_MAIL_MAIN_DB"
+CA_DB_ENV = "SECURED_MAIL_CA_DB"
+DEFAULT_MAIN_DB = Path("pubKey_storage.db")
+DEFAULT_CA_DB = Path("ca_storage.db")
 
 app = Flask(__name__)
 
@@ -14,14 +33,28 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 # Подключение к основным базам данных
 def connect_main_db():
-    conn = sqlite3.connect('pubKey_storage.db')
+    conn = sqlite3.connect(str(_resolve_db_path(MAIN_DB_ENV, DEFAULT_MAIN_DB)))
     conn.row_factory = sqlite3.Row
     return conn
 
 def connect_ca_db():
-    conn = sqlite3.connect('ca_storage.db')
+    conn = sqlite3.connect(str(_resolve_db_path(CA_DB_ENV, DEFAULT_CA_DB)))
     conn.row_factory = sqlite3.Row
     return conn
+
+
+def _resolve_db_path(env_name: str, default: Path) -> Path:
+    """Return a filesystem path for a SQLite database.
+
+    The directory that will host the database file is created automatically.
+    Environment variables allow tests (and production deployments) to keep the
+    database files outside of the repository.
+    """
+
+    value = os.getenv(env_name)
+    path = Path(value) if value else default
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return path
 
 # Инициализация баз данных
 def init_main_db():
