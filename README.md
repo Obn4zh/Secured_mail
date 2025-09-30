@@ -24,8 +24,29 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
 
-# Примеры (уточни пути/модули под свой код):
-python server.py          # Запуск сервера
+# Конфигурация
+
+Сервер по умолчанию создаёт базы данных рядом с `server.py`:
+
+- `pubKey_storage.db` — сертификаты пользователей
+- `ca_storage.db` — данные центра сертификации
+
+Во время разработки и тестов расположение можно переопределить через
+переменные окружения:
+
+```bash
+export SECURED_MAIL_MAIN_DB=/tmp/secured-mail/users.sqlite
+export SECURED_MAIL_CA_DB=/tmp/secured-mail/ca.sqlite
+```
+
+Это полезно для изолированного запуска тестов, чтобы в репозитории не появлялись
+служебные файлы.
+
+## Примеры запуска
+
+```bash
+python server.py          # Запуск сервера (Flask)
+
 # отдельной вкладкой
 python MailClient-master/main.py  # или python app/client.py
 ```
